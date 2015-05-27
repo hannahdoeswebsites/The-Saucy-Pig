@@ -1,8 +1,9 @@
 @import '../bower_components/bourbon/app/assets/stylesheets/bourbon';
 @import '../bower_components/neat/app/assets/stylesheets/neat';
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:300,400);
 
 // Typography
-$base-font-family: $helvetica;
+$base-font-family:'Roboto Condensed', sans-serif;
 
 // Colors
 $blue: #477dca;
@@ -16,6 +17,87 @@ $base-background-color: $very-light-gray;
 
 body {
   font-family: $base-font-family;
-  background-color: $base-background-color;
+  background-color: red;
   color: $base-font-color;
+  @include outer-container;
+
+}
+
+header {
+  @include span-columns(12);
+  background-color: black;
+  border: 1px solid red;
+  height: auto;
+  margin-top: 50px;
+
+  img {
+    vertical-align: middle;
+    float: left;
+    @include span-columns(3);
+    border: 1px solid red;
+    margin-right: 0px;
+  }
+
+  div {
+    color:white;
+    font-weight: lighter;
+    border: 1px solid red;
+    @include span-columns(5);
+   height: auto;
+   text-align: center;
+   line-height:30px;
+   margin-top: 10px;
+
+   h2 {
+     font-size: 30px;
+
+   }
+
+   h3 {
+     font-size:22px;
+   }
+ }
+
+}
+
+.contact {
+  @include span-columns(3);
+  float: right;
+  color: red;
+  font-weight: bold;
+  font-size: 20px;
+  background-color: black;
+
+  i {
+    color: white;
+
+  }
+}
+
+
+.menu {
+@include span-columns(9);
+border: 1px solid red;
+margin: 0 auto;
+float: right;
+height: 100px;
+background-color: black;
+}
+
+.images {
+  @include span-columns(3.27);
+  border: 1px solid red;
+  margin: 0 auto;
+  float: left;
+  height: 100px;
+  background-color: black;
+}
+
+
+footer {
+  @include span-columns(12);
+  border: 1px solid red;
+  margin: 0 auto;
+  height: 100px;
+  background-color: black;
 }
