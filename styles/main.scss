@@ -1,0 +1,279 @@
+@import '../bower_components/bourbon/app/assets/stylesheets/bourbon';
+@import '../bower_components/neat/app/assets/stylesheets/neat';
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:300,400);
+
+// Typography
+$base-font-family:'Roboto Condensed', sans-serif;
+
+// Colors
+$blue: #477dca;
+$dark-gray: #333;
+$medium-gray: #999;
+$light-gray: #ddd;
+$very-light-gray: #fafafa;
+
+$base-font-color: $dark-gray;
+$base-background-color: $very-light-gray;
+
+body {
+  font-family: $base-font-family;
+  background-color: #000 ;
+  color: $base-font-color;
+  @include outer-container;
+
+}
+
+header {
+  @include span-columns(12);
+  background-color: #000;
+
+  height: auto;
+
+
+  img {
+    vertical-align: middle;
+    float: left;
+    @include span-columns(3);
+    @include shift(4);
+    height: 200px;
+    width: 300px;
+    margin-right: 0px;
+    margin-top: 150px;
+  }
+
+}
+
+.contact {
+  @include span-columns(3);
+  padding-right: 30px;
+  float: right;
+  color: white;
+  font-size: 15px;
+  padding-top: 70px;
+
+
+  p {
+    margin: 0 auto;
+  }
+
+
+  a i {
+    padding-top: 0;
+    color: rgba(66, 95, 156, 1);
+    @include shift(4);
+
+
+  }
+}
+
+.buttons {
+@include shift(4);
+  margin-top: 350px;
+
+  button {
+    width: 300px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border: 2px solid red;
+    border-radius: 6px;
+  }
+
+
+    a:link {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: #fff;
+    }
+
+    a:hover {
+      color: #333;
+    }
+
+    a:active {
+    color: gray;
+    }
+
+}
+
+// IMAGES PAGE
+
+.images {
+  @include span-columns(12);
+  padding-top: 100px;
+  color: white;
+font-size: 30px;
+  text-align:center;
+  font-family: 'Comfortaa', cursive;
+
+
+  img {
+
+    @include span-columns(3.7);
+    @include shift(.2);
+    max-height: 300px;
+    max-width: 400px;
+    margin-bottom: 30px;
+    border: 5px solid red;
+    border-radius: 10px;
+    filter: grayscale(50%);
+
+  }
+}
+
+.imagesfooter {
+  @include span-columns(12);
+  border-top: 1px solid white;
+  text-align: center;
+  font-size: 20px;
+  padding-top: 10px;
+
+  a:link {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  a:visited {
+    color: #fff;
+  }
+
+  a:hover {
+    color: #333;
+  }
+
+  a:active {
+  color: gray;
+  }
+}
+
+
+
+// Catering Page
+
+.catering
+{
+  @include span-columns(12);
+  padding-top: 100px;
+  color: red;
+  font-size: 30px;
+  text-align:center;
+  font-family: 'Comfortaa', cursive;
+
+  p {
+    font-size: 15px;
+    text-decoration: underline;
+    color: white;
+  }
+
+}
+
+.meats {
+  color: white;
+  @include span-columns(5);
+  float: left;
+
+  h3 {
+    color: red;
+    font-weight: bolder;
+    font-family: 'Comfortaa', cursive;
+    font-size: 25px;
+
+  }
+
+  ul {
+    font-size: 20px;
+    @include shift(2);
+    padding-top: 15px;
+  }
+}
+
+
+.sides {
+  color: white;
+  @include span-columns(6);
+  float: right;
+
+  h3 {
+    color: red;
+    font-weight: bolder;
+    font-family: 'Comfortaa', cursive;
+    font-size: 25px;
+    text-align: center;
+
+  }
+}
+  #one {
+
+    font-size: 20px;
+    @include span-columns(6);
+    float: left;
+
+  }
+
+  #two {
+    font-size: 20px;
+    @include span-columns(6);
+    float: right;
+  }
+
+  .menufooter {
+      @include span-columns(12);
+      border-top: 1px solid white;
+      text-align: center;
+      font-size: 20px;
+      padding-top: 10px;
+
+      a:link {
+        color: #fff;
+        text-decoration: none;
+      }
+
+      a:visited {
+        color: #fff;
+      }
+
+      a:hover {
+        color: #333;
+      }
+
+      a:active {
+      color: gray;
+      }
+
+  }
+
+
+  // CONTACT PAGE
+
+.contact-form {
+  @include span-columns ()
+}
+
+  .contactfooter {
+      @include span-columns(12);
+      border-top: 1px solid white;
+      text-align: center;
+      font-size: 20px;
+      padding-top: 10px;
+
+      a:link {
+        color: #fff;
+        text-decoration: none;
+      }
+
+      a:visited {
+        color: #fff;
+      }
+
+      a:hover {
+        color: #333;
+      }
+
+      a:active {
+      color: gray;
+      }
+
+  }
