@@ -249,12 +249,16 @@ font-size: 30px;
   // CONTACT PAGE
 
 .contact-form {
-  @include span-columns ()
+  @include span-columns (5);
 
   input#name
     {
         width: 20px;
         height: 20px;
+    }
+
+    p {
+      color: white;
     }
 }
 
