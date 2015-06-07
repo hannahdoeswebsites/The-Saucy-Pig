@@ -256,12 +256,11 @@ h1 {
   font-size: 40px;}
 
 
-.contact-form {
-  @include span-columns (12);
+form {
+  @include span-columns(12);
+  @include shift(2);
   color: white;
 
-}
-form {
     p {
       color: white;
     }
