@@ -251,15 +251,31 @@ font-size: 30px;
 .contact-form {
   @include span-columns (5);
 
-  input#name
-    {
-        width: 20px;
-        height: 20px;
-    }
-
+}
+.form {
     p {
       color: white;
     }
+
+    input#name
+      {
+          width: 50px;
+          height: 20px;
+      }
+
+      input#email {
+        width: 100px;
+      }
+
+      input#phone {
+        width: 100px;
+      }
+
+      input#date {
+        width: 100px;
+      }
+
+
 }
 
   .contactfooter {
