@@ -250,6 +250,12 @@ font-size: 30px;
 
 .contact-form {
   @include span-columns ()
+
+  input#name
+    {
+        width: 20px;
+        height: 20px;
+    }
 }
 
   .contactfooter {

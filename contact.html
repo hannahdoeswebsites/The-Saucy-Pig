@@ -23,18 +23,20 @@
     <header class="contactHeader">
       <h1> CONTACT THE SAUCY PIG</h1>
     </header>
-
+<div class="contactform">
     <form action="//formspree.io/your@email.com"
       method="POST">
-    <input type="text" name="name">
-    <input type="email" name="_replyto">
-    <input type="tel" name="phone">
-    <input type="date" name="cateringDate">
-    <input type="text" name="info">
-    
-    <input type="submit" value="Send">
-</form>
+      <div class="form">
+    Name: <input type="text" id="name" name="name" placeholder="Name"><br>
+    Email Address: <input type="email" id="email" name="_replyto" placeholder="Email Address"><br>
+    Phone Number: <input type="tel" id="phone" name="phone" placeholder="Phone Number"><br>
+    Catering Date Needed: <input type="date" id="date" name="cateringDate"><br>
+    Other Info: <textarea name="info" columns="10" id="info" rows="" placeholder="Other Info"></textarea>
 
+    <input type="submit" value="Send">
+  </div>
+</form>
+</div>
 
 <footer class="contactfooter">
   <a href="index.html">Homepage</a> | <a href="images.html"> Images</a> | <a href="menu.html">Menu</a>
