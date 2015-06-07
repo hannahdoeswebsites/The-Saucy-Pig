@@ -250,10 +250,13 @@ font-size: 30px;
 
 .contactHeader {
 
+h1 {
   color: white;
   text-align: center;
-  font-size: 40px;
+  font-size: 40px;}
+
 }
+
 .contact-form {
   @include span-columns (5);
   color: white;
@@ -282,7 +285,11 @@ font-size: 30px;
         width: 100px;
       }
 
-
+      input#submit
+        {
+            width: 100px;
+            
+        }
 }
 
   .contactfooter {
